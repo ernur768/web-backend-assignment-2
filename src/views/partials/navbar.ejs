@@ -1,0 +1,14 @@
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+            <div class="navbar-nav flex-row justify-content-around
+                col-12
+                offset-sm-1 col-sm-10
+                offset-md-2 col-md-8
+                offset-lg-3 col-lg-6"
+            >
+                <a class="nav-link <% if (active === 'weather') { %>active<%}%>" href="/weather">Weather api</a>
+                <a class="nav-link <% if (active === 'quote') { %>active<%}%>" href="/quote">Quote api</a>
+                <a class="nav-link <% if (active === 'love-calculator') { %>active<%}%>" href="/loveCalculator">Love calculator</a>
+            </div>
+    </div>
+</nav>

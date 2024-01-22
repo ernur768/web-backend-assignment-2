@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weather</title>
+    <%- include('../partials/head') %>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+</head>
+<body>
+<style>
+    #result { height: 300px; }
+</style>
+<%- include('../partials/navbar'); %>
+
+<div class="container mt-4">
+    <h1 class="text-center mb-4">Weather Api</h1>
+    <form class="offset-2 col-8
+                offset-md-3 col-md-6
+                offset-lg-4 col-lg-4">
+        <div class="input-group w-100">
+            <div class="form-outline col">
+                <label class="form-label" for="form1" hidden></label>
+                <input type="search" name="city" id="form1" class="form-control text-center" placeholder="City" />
+            </div>
+            <button type="submit" class="btn btn-primary d-flex justify-content-center align-items-center" data-mdb-ripple-init>
+                <img src="/icons/search.svg" alt="search icon">
+            </button>
+        </div>
+    </form>
+</div>
+
+<div id="result" class="container mt-4">
+    <div id="map" class="h-100 offset-1 col-4"></div>
+    <div id="data" class="h-100 col-4 text-left">
+        "temp": -22.03,
+        "description": "overcast clouds",
+        "icon": "04n",
+        "feels_like": -29.03,
+        "humidity": 71,
+        "pressure": 1030,
+        "wind_speed": 4,
+        "country_code": "KZ"
+    </div>
+</div>
+
+<%- include('../partials/footer'); %>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+<script src="/js/weather-view.js"></script>
+</body>
+</html>
