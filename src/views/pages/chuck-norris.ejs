@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Love calculator</title>
+    <%- include('../partials/head') %>
+</head>
+<body>
+<%- include('../partials/navbar'); %>
+
+<div class="container mt-4">
+    <h1 class="text-center mb-4">Chuck Norris jokes Api</h1>
+
+    <div class="row">
+        <button type="button" class="btn btn-primary offset-5 col-2">get joke</button>
+    </div>
+
+    <div id="result" class="alert alert-light text-center mt-5 offset-3 col-6" style="white-space: pre-wrap">joke</div>
+</div>
+
+<%- include('../partials/footer'); %>
+
+<script src="/js/chuck-norris-joke-view.js" ></script>
+</body>
+</html>

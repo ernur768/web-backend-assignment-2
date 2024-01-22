@@ -31,17 +31,21 @@
 </div>
 
 <div id="result" class="container mt-4">
-    <div id="map" class="h-100 offset-1 col-4"></div>
-    <div id="data" class="h-100 col-4 text-left">
-        "temp": -22.03,
-        "description": "overcast clouds",
-        "icon": "04n",
-        "feels_like": -29.03,
-        "humidity": 71,
-        "pressure": 1030,
-        "wind_speed": 4,
-        "country_code": "KZ"
+<div class="row h-100">
+    <div id="map" class="offset-1 col-4"></div>
+    <div id="data" class="offset-1 col-4 text-left pt-2">
+        <div class="card-body">
+            <p id="temperature" class="card-text">Temperature:</p>
+            <p id="feels-like" class="card-text">Feels Like:</p>
+            <p id="description" class="card-text">Description:</p>
+            <p id="humidity" class="card-text">Humidity:</p>
+            <p id="wind-speed" class="card-text">Wind Speed:</p>
+            <p id="pressure" class="card-text">Pressure:</p>
+            <p id="countryCode" class="card-text">Country code:</p>
+            <p id="icon" class="card-text">Icon:</p>
+        </div>
     </div>
+</div>
 </div>
 
 <%- include('../partials/footer'); %>

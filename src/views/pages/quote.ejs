@@ -7,6 +7,18 @@
 <body>
 <%- include('../partials/navbar'); %>
 
-quote api
+<div class="container mt-4">
+    <h1 class="text-center mb-4">Quotes Api</h1>
+
+    <div class="row">
+        <button type="button" class="btn btn-primary offset-5 col-2">get quote</button>
+    </div>
+
+    <div id="result" class="alert alert-light text-center mt-5 offset-3 col-6" style="white-space: pre-wrap">quote</div>
+</div>
+
+<%- include('../partials/footer'); %>
+
+<script src="/js/quote-view.js" ></script>
 </body>
 </html>
